@@ -7,42 +7,72 @@
     <link rel="icon" href="src/assets/img/logo/logo2.webp">
     <title>Document</title>
 </head>
-<body class="bg-neutral-300">
+<body>
     <!-- debut du header  -->
-    <header class="absolute backdrop-blur-2xl flex  w-full justify-between items-center">
-        <img src="src/assets/img/logo/logo2.webp" alt="logo de la boite " class="w-16">
-        <input type="text" class="bg-white sm:w-96 rounded-lg h-8 p-2 relative ">
-        <nav>
-            <ul class="xl:flex hidden gap-10 text-black text-xl items-center">
-                <li class="hover:underline"><a href="">home</a></li>
-                <li class="hover:underline"><a href="">singin</a></li>
-                <li class="bg-blue-500 p-2 m-1 rounded-lg hover:scale-105 duration-1000  "><a href="">singup</a></li>
-            </ul>
-        </nav>
-        <button class=" xl:hidden cursor-pointer hover:scale-105 duration-500  sm:w-14 sm:h-10  w-12 h-10 bg-blue-500 rounded-lg mr-3 ">
-            <div class="w-1/2 h-1/2 -top-[60%] left-[50%] relative -translate-x-[50%] ">
-                <div class="h-0.5 w-[120%] bg-black"></div>
-                <div class="h-0.5 w-[120%] bg-black"></div>
-                <div class="h-0.5 w-[120%] bg-black"></div>
-            </div>
-        </button>
+    <header class="absolute backdrop-blur-2xl flex   w-full justify-between items-center">
+        <!-- logo -->
+         <div class=" backdrop-blur-2xl flex  w-full justify-between items-center">
+             <img src="src/assets/img/logo/logo2.webp" alt="logo de la boite " class="w-16">
+             <!-- <input type="text" class="bg-white sm:w-96 rounded-lg h-8 p-2 relative ">
+             <nav> -->
+                 <label class="input xl:w-[30vw] relative @max-sm:w-[5vw]  xl:left-10">
+                     <!-- <svg class="h-[1em] opacity-50"></svg> -->
+                     <input type="search" class="grow " placeholder="search">
+                     <kbd class="kbd kbd-sm">ctrl</kbd>
+                     <kbd class="kbd kbd-sm">k</kbd>
+                 </label>
+                 <!-- navbar -->
+                 <ul class="xl:flex hidden gap-10 text-black text-xl items-center">
+                     <li class="hover:underline"><a href="" class="capitalize" >home</a></li>
+                     <li class="hover:underline"><a href="" class="capitalize" >sing in</a></li>
+                     <li class="btn btn-outline btn-info uppercase m-2 "><a href="">singup</a></li>
+                 </ul>
+             </nav>
+             <!-- button responsive -->
+             <button class=" xl:hidden cursor-pointer hover:scale-105 duration-500  sm:w-14 sm:h-10  w-12 h-10 bg-blue-500 rounded-lg mr-3 ">
+                 <div class="w-1/2 h-1/2 -top-[60%] left-[50%] relative -translate-x-[50%] ">
+                     <div class="h-0.5 w-[120%] bg-black"></div>
+                     <div class="h-0.5 w-[120%] bg-black"></div>
+                     <div class="h-0.5 w-[120%] bg-black"></div>
+                 </div>
+             </button>
+         </div>
+         <div class="">
+            <button>maillot</button>
+         </div>
     </header>
     <!-- fin de la header -->
     <main>
-        <!-- <img src="src/assets/img/maillot/maillot22-min.webp" alt="" srcset=""> -->
-        <div class=" bg-[url(/src/assets/img/maillot/maillot22-min.webp)] bg-center bg-cover w-full xl:h-[60vh] h-[50vh] m-0">
-            <span class="text-6xl absolute top-[20vh] cursor-pointer backdrop-blur-3xl hover:scale-110 rounded-xl left-1  duration-300" ><</span>
-            <span class="text-6xl absolute top-[20vh] cursor-pointer right-1 backdrop-blur-2xl hover:scale-110 rounded-xl duration-300 " >></span>
-        </div>
+        <div class=" bg-[url(/src/assets/img/maillot/maillot22-min.webp)] bg-center bg-cover w-full xl:h-[6not-visited:0vh] h-[45vh] m-0"></div>
         <!-- section article -->
-        <section>
-            <article class="w-96 h-89">
+        <section class="px-10 pt-6">
+            <!-- <article class="w-96 h-89">
                 <img src="src/assets/img/maillot/maillot1-min.webp" alt="maillot" class="w-full " >
-            </article>
+            </article> -->
+            <div class="card bg-base-100 w-60 object-cover shadow-sm">
+                <figure>
+                    <img
+                    src="src/assets/img/maillot/maillot11-min.webp"
+                    alt="maillot" class="w-full h-full object-contain"/>
+                </figure>
+                <div class="card-body">
+                    <h2 class="card-title">
+                        maillot
+                        <div class="badge badge-secondary">NEW</div>
+                    </h2>
+                        <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+                        <div class="card-actions justify-end">
+                        <div class="badge badge-outline">Fashion</div>
+                        <!-- <div class="badge badge-outline">Products</div> -->
+                         <div class="flex gap-2">
+                            <button class="btn  btn-accent flex items-center "><span>add</span> <span class="text-2xl">+</span></button>
+                            <button class="btn  btn-success">buy now</button>
+                         </div>
+                    </div>
+                </div>
+            </div>
         </section>
-            <button class="inline-block cursor-pointer rounded-md bg-gray-800 px-4 py-3 text-center text-sm font-semibold uppercase text-white transition duration-200 ease-in-out hover:bg-gray-900">
-  Button
-</button>
+            
     </main>
     
 </body>
