@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/output.css">
+    <link rel="icon" href="/static/img/logo/logo2.webp">
+    <title></title>
+</head>
+<body class="flex justify-center items-center h-screen">
+    <form action="" class=" max-sm:w-[80%]  max-xl:w-[40%] w-[50%] xl:w-[25%]  bg-base-100 shrink-0 shadow-2xl">
+        <h3 class="text-5xl font-bold capitalize text-center">sign  in</h3>
+        <div class="card-body">
+            <label for="email">email</label>
+            <input type="email" name="" class="input" placeholder="Email">
+            <label for="password">password</label>
+            <input type="password" name="" class="input" placeholder="password">
+            <div> <a href="{{url_for('forget')}}" class="link link-hover">forget password?</a> </div>
+            <button class="btn btn-neutral mt-4" >login</button>
+            <div class="flex justify-end"> <a href="{{url_for('login')}}" target="_blank" class=" text-end link link-hover">sigin up </a> </div>
+        </div>
+    </form>
+</body>
+</html>

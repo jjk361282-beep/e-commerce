@@ -1,0 +1,18 @@
+{
+  "name": "taiwins",
+  "version": "1.0.0",
+  "description": "mon",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx @tailwindcss/cli -i ./static/css/input.css -o ./static/css/output.css --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.18",
+    "tailwindcss": "^4.1.18"
+  },
+  "devDependencies": {
+    "daisyui": "^5.5.14"
+  }
+}
